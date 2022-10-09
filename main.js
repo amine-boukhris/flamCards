@@ -7,7 +7,10 @@ let words = {
     "word 4": "ans 4",
     "word 5": "ans 5",
     "word 6": "ans 6",
-    "word 7": "ans 7"
+    "word 7": "ans 7",
+    "die Katze": "the cat",
+    "der Vogel": "the bird",
+    "der Hund": "the dog"
 }
 
 let wordsLength = Object.keys(words).length;
