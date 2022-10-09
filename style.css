@@ -1,0 +1,157 @@
+
+
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    --card-color: #0DEAFC;
+    --prim: #fff;
+    --text: #024089;
+    --page-bg: #fff;
+    --body-bg: #E4E4E4;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background: var(--body-bg);
+}
+
+body.dark {
+    --body-bg: #0c0c0c;
+    --page-bg: #1a1919;
+    --text: #fff;
+}
+
+
+
+
+
+/* this the custom button style */
+
+/* From uiverse.io by @alexmaracinaru */
+.cta {
+    position: relative;
+    margin: auto;
+    padding: 12px 18px;
+    transition: all 0.2s ease;
+    border: none;
+    background: none;
+    width: 300px;
+    margin-top: 17px;
+   }
+   
+   .cta:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    border-radius: 50px;
+    background: var(--card-color);
+    width: 45px;
+    height: 45px;
+    transition: all 0.3s ease;
+   }
+   
+   .cta span {
+    position: relative;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    /* color: #234567; */
+    color: var(--text);
+   }
+   
+   .cta svg {
+    position: relative;
+    top: 0;
+    margin-left: 10px;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke: #234567;
+    stroke-width: 2;
+    transform: translateX(-5px);
+    transition: all 0.3s ease;
+   }
+   
+   .cta:hover:before {
+    width: 100%;
+    background: #FFC619;
+   }
+   
+   .cta:hover svg {
+    transform: translateX(0);
+   }
+   
+   .cta:active {
+    transform: scale(0.95);
+   }
+
+/* end of button design */
+
+
+
+.wrapper {
+    background: var(--page-bg);
+    height: 926px;
+    width: 428px;
+    border-radius: 35px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    transition: all ease-out 300ms;
+}
+.wrapper:hover {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 60px 120px -30px, rgba(0, 0, 0, 0.28) 0px 30px 60px -30px;
+    transform: scale(1.01);
+}
+
+.header {
+    display: flex;
+    height: 106px;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 67px;
+    padding-right: 61px;
+}
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 78px;
+}
+#card {
+    height: 400px;
+    width: 300px;
+    background-color: var(--card-color);
+    border-radius: 28px;
+    margin-top: 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset; */
+    transition: all ease-out 300ms;
+}
+#card:hover {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    margin-top: 14px;
+}
+#card:hover .cta {
+    margin-top: 20px;
+}
+.main h1 {
+    font-size: 41px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    color: var(--text);
+}
+#main-word {
+    color: #024089;
+}
+
